@@ -34,7 +34,9 @@ The original version was a full-stack system that supported fuzzy search and ser
 ---
 ## ⚙️ Prerequisites
 Before running this app, make sure you have the following installed on your system:
+
 -✅ Node.js (v14 or higher)
+
 -✅ React Native CLI
 
 ### Install React Native CLI
