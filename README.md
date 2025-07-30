@@ -66,7 +66,9 @@ OR
 npm start
 ```
 ## Main Menu
-<img width="1338" height="731" alt="image" src="https://github.com/user-attachments/assets/444a9213-8ce7-4c91-9635-79c7e44d87e5" />
+
+<img width="1282" height="612" alt="image" src="https://github.com/user-attachments/assets/3e9059af-1f85-48ce-88aa-573fcc3d7090" />
+
 
 
 
