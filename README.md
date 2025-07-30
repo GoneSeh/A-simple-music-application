@@ -32,6 +32,15 @@ The original version was a full-stack system that supported fuzzy search and ser
 | Search Algo | Levenshtein Distance |
 
 ---
+## ⚙️ Prerequisites
+Before running this app, make sure you have the following installed on your system:
+-✅ Node.js (v14 or higher)
+-✅ React Native CLI
+
+### Install React Native CLI
+```bash
+npm install -g react-native-cli
+```
 
 ## 🚀 Getting Started
 
@@ -39,3 +48,28 @@ The original version was a full-stack system that supported fuzzy search and ser
 ```bash
 git clone https://github.com/GoneSeh/A-simple-music-application.git
 cd A-simple-music-application
+```
+### 2. Navigate to the project directory
+```bash
+cd my-web-app
+```
+### 3. Install dependencies
+```bash
+npm install
+```
+### 4. Start the Metro bundler (for React Native)
+```bash
+npx react-native start
+```
+OR
+```bash
+npm start
+```
+## Main Menu
+<img width="1338" height="731" alt="image" src="https://github.com/user-attachments/assets/444a9213-8ce7-4c91-9635-79c7e44d87e5" />
+
+
+
+
+
+
