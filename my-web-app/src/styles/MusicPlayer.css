@@ -1,0 +1,170 @@
+/* Container for the music player and playlist */
+.music-player-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  gap: 20px; /* Space between player and playlist */
+}
+
+/* Music player styling */
+.music-player {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(188, 184, 198, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 2px -2px 6px rgba(214, 214, 214, 0.2),
+              inset -3px 3px 3px rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 30px 20px;
+  max-width: 400px;
+}
+
+.album-cover {
+  position: relative;
+}
+
+.album-cover img {
+  border-radius: 50%;
+  border: 2px solid rgba(222, 215, 255, 0.9);
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 0 10px 60px rgba(200, 187, 255, 0.75);
+  transition: transform 0.5s ease-out;
+  pointer-events: none;
+  user-select: none;
+}
+
+.point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: rgba(17, 6, 58, 0.7);
+  border: 2px solid rgba(222, 215, 255, 0.9);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.music-player h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 16px 0 2px;
+}
+
+.music-player p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 26px;
+  opacity: 0.8;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+  background: rgba(200, 187, 255, 0.6);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(200, 187, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.controls button:hover,
+.controls button:focus {
+  transform: scale(0.96);
+}
+
+.controls button.play-pause-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+}
+
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgb(77, 58, 162);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid rgb(234, 229, 255);
+  box-shadow: 0 6px 10px rgba(200, 187, 255, 0.4);
+}
+
+.controls button i {
+  color: #fff;
+}
+
+/* Playlist table styling */
+.playlist-table {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+  background: rgba(188, 184, 198, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 2px -2px 6px rgba(214, 214, 214, 0.2),
+              inset -3px 3px 3px rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.playlist-table h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.playlist-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Remove alternating row background */
+.playlist-table tbody tr {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.playlist-table tbody tr:hover {
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+/* Currently playing row */
+.playlist-table tr.active {
+  background-color: #444;
+  font-weight: bold;
+}
+
+.playlist-table th,
+.playlist-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}

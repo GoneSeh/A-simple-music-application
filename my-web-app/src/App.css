@@ -1,0 +1,197 @@
+.app {
+  text-align: center;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #303428;
+  color: white;
+  padding: 20px;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.app-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+.search-page {
+  padding: 20px;
+  text-align: left;
+}
+
+.add-artist-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-artist-container input {
+  margin: 5px;
+  padding: 8px;
+  width: 300px;
+  display: block;
+}
+
+.add-artist-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.add-artist-button:hover {
+  background-color: #218838;
+}
+
+.view-artists-container, .view-songs-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+
+/* App.css */
+
+.music-player {
+  position: relative;
+  width: 350px;
+  height: 290px;
+  margin: 30px auto;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background: #222;
+  overflow: hidden;
+}
+
+.info,
+.controls {
+  color: #fff;
+  position: relative;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("//i.imgur.com/E09T8tf.png") no-repeat center;
+}
+
+.icon-play {
+  background-image: url("//i.imgur.com/xlBv5aR.png");
+}
+.icon-pause {
+  background-image: url("//i.imgur.com/lIhwduj.png");
+}
+.icon-next {
+  background-image: url("//i.imgur.com/Mb6Nzj5.png");
+}
+.icon-previous {
+  background-image: url("//i.imgur.com/LIqj0nr.png");
+}
+.icon-repeat {
+  background-image: url("//i.imgur.com/338F8MX.png");
+}
+.icon-shuffle {
+  background-image: url("//i.imgur.com/AQAxRxS.png");
+}
+.icon-share {
+  background-image: url("//i.imgur.com/PGIC6ME.png");
+}
+.icon-heart {
+  background-image: url("//i.imgur.com/E09T8tf.png");
+}
+
+/* jQuery UI slider styles for progress and volume */
+.volume-level,
+.progress {
+  width: 100%;
+  height: 5px;
+  background: #000;
+  cursor: pointer;
+}
+
+.volume-level .ui-slider-range,
+.progress .ui-slider-range {
+  background: #ed553b;
+}
+
+.volume-level .ui-slider-handle,
+.progress .ui-slider-handle {
+  width: 8px;
+  height: 22px;
+  background: url("//i.imgur.com/tsqwz1N.png") no-repeat center;
+  margin-top: -8px;
+  border: none;
+  cursor: move;
+}

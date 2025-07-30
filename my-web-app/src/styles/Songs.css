@@ -1,0 +1,84 @@
+.recommended-songs {
+  margin-top: 2rem;
+}
+
+.song-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+/* to hide scroll bar
+/* .song-container::-webkit-scrollbar {
+  display: none;
+}
+*/
+
+
+.song {
+  flex: 0 0 auto;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  width: 220px;
+  padding: 10px;
+  color: white;
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+
+.song:hover {
+  transform: translateY(-5px);
+}
+
+.song-img {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.song-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.song-img:hover .overlay {
+  opacity: 1;
+}
+
+.song-title {
+  margin-top: 10px;
+}
+
+.song-title h2 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.song-title p {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+}
+
+.song-title span {
+  font-size: 0.8rem;
+  color: #888;
+}

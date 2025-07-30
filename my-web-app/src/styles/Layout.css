@@ -1,0 +1,12 @@
+/* Layout.css */
+.layout {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+  flex-grow: 1; /* Takes up remaining space */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: grey; /* Main content background color */
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
