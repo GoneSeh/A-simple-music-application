@@ -2,10 +2,11 @@
 
 A simple and powerful music management web application for storing, searching, and organizing personal music collections. Built as part of my Final Year Project at Universiti Tunku Abdul Rahman (UTAR), this system aims to provide a lightweight, user-friendly platform with fuzzy search capabilities and a modern UI.
 
-#UPDATE
+# UPDATE
 After receiving a few requests from Github community about the functionally of my back-end. Here is the update. (2 Oct 2025)
 
 my-web-app - FRONTEND
+---
 json-to-sql - BACKEND
 
 ---
